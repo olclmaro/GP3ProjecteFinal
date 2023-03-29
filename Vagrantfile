@@ -10,6 +10,7 @@ Vagrant.configure("2") do |config|
 		mv.cpus = 2
 		mv.customize ['modifyvm', :id, '--clipboard', 'bidirectional']     
 	end
+	config.vm.network "public_network" 
 	config.vm.provision "shell", inline: <<-SHELL
 		apt-get update
 		apt-get install net-tools
