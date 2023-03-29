@@ -3,10 +3,10 @@
 #
 Vagrant.configure("2") do |config|
 	config.vm.box = "generic/debian11"
-	config.vm.hostname = "gp2f5act16"
+	config.vm.hostname = "gp3olclmaro"
 	config.vm.provider "virtualbox" do |mv|
-		mv.name = "gp2f5act16"
-		mv.memory = 2048
+		mv.name = "GP3ProjecteFinal"
+		mv.memory = 4096
 		mv.cpus = 2
 		mv.customize ['modifyvm', :id, '--clipboard', 'bidirectional']     
 	end
