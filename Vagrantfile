@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 		curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 		sudo apt-get update -y
-		sudo sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose
+		sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose
 		sudo gpasswd -a vagrant docker
 		sudo apt-get install git
 	SHELL
